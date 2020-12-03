@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Netflow Lab Guide Page:</h1>
+    <p>
+        <a class="btn btn-primary btn-xs" href="{{ url_for('main.netflow_cnc') }}">1. Netflow CNC</a>
+    </p>
+    <p>
+	    <a class="btn btn-primary btn-xs" href="{{ url_for('main.netflow_scan') }}">2. Neflow Scan</a>
+    </p>
+
+{% endblock content %}

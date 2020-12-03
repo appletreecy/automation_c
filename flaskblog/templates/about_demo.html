@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Attack Demo Page:</h1>
+    <p>
+        <a class="btn btn-primary btn-xs" href="{{ url_for('main.netflow_demo') }}">1. Demo - Netflow</a>
+    </p>
+    <p>
+        <a class="btn btn-primary btn-xs" onclick="document.getElementById('threatIntel').innerHTML =
+        '<h6><font color=white>ThreatIntel starts launching......Please do not close this page!</font></h6>';" href="{{ url_for('main.threatIntel_demo') }}">
+        2. Demo - Threat Intel</a>
+        <div class="badge badge-danger text-wrap" style="width: 36rem; height: 2rem;"  id="threatIntel"></div>
+    </p>
+
+    <p>
+	    <a class="btn btn-primary btn-xs" href="{{ url_for('main.attack6') }}">3. Demo - Windows Brute</a>
+    </p>
+    <p>
+        <a class="btn btn-primary btn-xs" href="{{ url_for('main.waf_attack1') }}">4. Demo - WAF ATTACK1</a>
+    </p>
+    <p>
+	    <a class="btn btn-primary btn-xs" onclick="document.getElementById('demo1').innerHTML = '<h6><font color=white>Attack 1 starts launching......Please do not close this page!</font></h6>';" href="{{ url_for('main.cl_bps_demo') }}">5. Demo - CL</a>
+	    <div class="badge badge-danger text-wrap" style="width: 28rem; height: 2rem;"  id="demo1"></div>
+	</p>
+
+{% endblock content %}

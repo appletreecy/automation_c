@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Firewall Lab Guide Page:</h1>
+    <p>
+        <a class="btn btn-primary btn-xs" href="{{ url_for('main.firewall_syn_flood') }}">1. SYN Flood Attack</a>
+    </p>
+    <p>
+        <a class="btn btn-primary btn-xs" href="{{ url_for('main.firewall_ddos') }}">2. DDoS Attack</a>
+    </p>
+    <p>
+        <a class="btn btn-primary btn-xs" href="{{ url_for('main.firewall_packetcapture') }}">3. Packet Capture</a>
+    </p>
+
+{% endblock content %}
